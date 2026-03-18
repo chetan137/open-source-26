@@ -129,8 +129,6 @@ team-contribution-project/
 ├── style.css               ← All styles (CSS variables at the top)
 ├── script.js               ← All JavaScript (well-commented)
 │
-├── contributors/           ← Optional personal pages
-│   └── example-contributor.html   ← Copy & rename this for your page
 │
 ├── .env.example            ← Environment variable template (safe to commit)
 ├── .gitignore              ← Files Git will ignore (including .env)
