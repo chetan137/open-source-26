@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A beginner-friendly open-source project for learning Git and GitHub collaboration. Meet our amazing contributors!"
+    />
+    <title>Team Contribution Project 🚀</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <!-- Logo / Brand -->
+        <a href="#" class="nav-logo" id="nav-logo">
+          <span class="logo-icon">🚀</span>
+          <span class="logo-text">OpenCollab</span>
+        </a>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contributors" class="nav-link">Contributors</a></li>
+          <li><a href="#how-to-contribute" class="nav-link">Contribute</a></li>
+        </ul>
+
+        <!-- GitHub Button -->
+        <a
+          href="https://github.com"
+          target="_blank"
+          class="btn btn-primary"
+          id="github-btn"
+        >
+          ⭐ Star on GitHub
+        </a>
+
+        <!-- Hamburger Menu (Mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home">
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">🌟 Open Source Project</div>
+        <h1 class="hero-title">
+          Learn Git &amp; GitHub <br />
+          <span class="gradient-text">by Contributing Together</span>
+        </h1>
+        <p class="hero-subtitle">
+          A beginner-friendly project where anyone can contribute and showcase
+          their profile. Fork, clone, and add your card — it's that simple!
+        </p>
+        <div class="hero-actions">
+          <a href="#contributors" class="btn btn-primary" id="view-contributors-btn">
+            👥 View Contributors
+          </a>
+          <a href="#how-to-contribute" class="btn btn-secondary" id="start-contributing-btn">
+            🛠️ Start Contributing
+          </a>
+        </div>
+        <!-- Live Stats Bar -->
+        <div class="stats-bar">
+          <div class="stat-item">
+            <span class="stat-number" id="contributor-count">0</span>
+            <span class="stat-label">Contributors</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">Open</span>
+            <span class="stat-label">Source</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Free</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why This Project?</h2>
+          <p class="section-subtitle">
+            The best way to learn Git &amp; GitHub is by actually using them on a real
+            project with real people.
+          </p>
+        </div>
+        <div class="features-grid">
+          <!-- Feature Card 1 -->
+          <div class="feature-card">
+            <div class="feature-icon">🌱</div>
+            <h3>Beginner Friendly</h3>
+            <p>
+              No complex frameworks or setup needed. Just HTML, CSS, and a bit
+              of JavaScript. Perfect for your first open-source contribution.
+            </p>
+          </div>
+          <!-- Feature Card 2 -->
+          <div class="feature-card">
+            <div class="feature-icon">🤝</div>
+            <h3>Collaborative</h3>
+            <p>
+              Work alongside 40+ contributors. Learn real-world Git workflows
+              like branching, forking, and pull requests.
+            </p>
+          </div>
+          <!-- Feature Card 3 -->
+          <div class="feature-card">
+            <div class="feature-icon">📚</div>
+            <h3>Learn by Doing</h3>
+            <p>
+              Follow the step-by-step contribution guide and understand the full
+              GitHub contribution cycle from start to finish.
+            </p>
+          </div>
+          <!-- Feature Card 4 -->
+          <div class="feature-card">
+            <div class="feature-icon">🏆</div>
+            <h3>Build Portfolio</h3>
+            <p>
+              Your GitHub profile gets a real open-source contribution. Show
+              employers you know how to work in a team.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTRIBUTORS SECTION ==================== -->
+    <section class="contributors-section" id="contributors">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Contributors 🌟</h2>
+          <p class="section-subtitle">
+            Meet the amazing people who have contributed to this project. You
+            could be next!
+          </p>
+          <!-- Search Bar -->
+          <div class="search-bar">
+            <span class="search-icon">🔍</span>
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search contributors by name or skill..."
+              aria-label="Search contributors"
+            />
+          </div>
+        </div>
+
+        <!-- Contributors Grid -->
+        <!-- ============================================================
+             HOW TO ADD YOUR CARD:
+             Copy one of the contributor card blocks below and paste it
+             at the END of this grid (before the closing </div> tag).
+             Fill in your own details. See the README for full instructions.
+        ============================================================ -->
+        <div class="contributors-grid" id="contributors-grid">
+
+          <!-- ========== CONTRIBUTOR CARD TEMPLATE ==========
+               Copy this block, paste it below, and fill in your info.
+
+          <div class="contributor-card" data-name="Your Name" data-skills="skill1, skill2">
+            <div class="card-header">
+              <div class="avatar" style="background: linear-gradient(135deg, #YOUR_COLOR1, #YOUR_COLOR2);">
+                YI
+              </div>
+              <div class="card-badge">New Contributor</div>
+            </div>
+            <div class="card-body">
+              <h3 class="contributor-name">Your Name</h3>
+              <p class="contributor-role">Your Role / Title</p>
+              <p class="contributor-bio">
+                A short bio about yourself. What do you do? What are your interests?
+                Keep it under 150 characters!
+              </p>
+              <div class="skills-list">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/yourusername" target="_blank" class="social-link" title="GitHub">
+                🐙 GitHub
+              </a>
+              <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-link" title="LinkedIn">
+                💼 LinkedIn
+              </a>
+            </div>
+          </div>
+          ========================================================= -->
+
+          <!-- ===== CONTRIBUTOR 1: Alice Johnson ===== -->
+          <div class="contributor-card" data-name="Alice Johnson" data-skills="html, css, javascript, react">
+            <div class="card-header">
+              <div class="avatar" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                AJ
+              </div>
+              <div class="card-badge">Project Lead</div>
+            </div>
+            <div class="card-body">
+              <h3 class="contributor-name">Alice Johnson</h3>
+              <p class="contributor-role">Frontend Developer</p>
+              <p class="contributor-bio">
+                Passionate about open-source and teaching beginners the power of collaboration through code.
+              </p>
+              <div class="skills-list">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com" target="_blank" class="social-link">🐙 GitHub</a>
+              <a href="https://linkedin.com" target="_blank" class="social-link">💼 LinkedIn</a>
+            </div>
+          </div>
+
+          <!-- ===== CONTRIBUTOR 2: Bob Smith ===== -->
+          <div class="contributor-card" data-name="Bob Smith" data-skills="python, git, open-source">
+            <div class="card-header">
+              <div class="avatar" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                BS
+              </div>
+              <div class="card-badge">Contributor</div>
+            </div>
+            <div class="card-body">
+              <h3 class="contributor-name">Bob Smith</h3>
+              <p class="contributor-role">Backend Developer</p>
+              <p class="contributor-bio">
+                Love building things and making first open-source contributions accessible to everyone on the planet.
+              </p>
+              <div class="skills-list">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Open-Source</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com" target="_blank" class="social-link">🐙 GitHub</a>
+              <a href="https://linkedin.com" target="_blank" class="social-link">💼 LinkedIn</a>
+            </div>
+          </div>
+
+          <!-- ===== CONTRIBUTOR 3: Priya Sharma ===== -->
+          <div class="contributor-card" data-name="Priya Sharma" data-skills="ui/ux, figma, css, design">
+            <div class="card-header">
+              <div class="avatar" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                PS
+              </div>
+              <div class="card-badge">Contributor</div>
+            </div>
+            <div class="card-body">
+              <h3 class="contributor-name">Priya Sharma</h3>
+              <p class="contributor-role">UI/UX Designer</p>
+              <p class="contributor-bio">
+                Designing interfaces that feel intuitive. Believe great design is invisible and accessibility is non-negotiable.
+              </p>
+              <div class="skills-list">
+                <span class="skill-tag">UI/UX</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">CSS</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com" target="_blank" class="social-link">🐙 GitHub</a>
+              <a href="https://linkedin.com" target="_blank" class="social-link">💼 LinkedIn</a>
+            </div>
+          </div>
+
+          <!-- ===== CONTRIBUTOR 4: Carlos Rivera ===== -->
+          <div class="contributor-card" data-name="Carlos Rivera" data-skills="node.js, express, mongodb, api">
+            <div class="card-header">
+              <div class="avatar" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+                CR
+              </div>
+              <div class="card-badge">Contributor</div>
+            </div>
+            <div class="card-body">
+              <h3 class="contributor-name">Carlos Rivera</h3>
+              <p class="contributor-role">Full Stack Developer</p>
+              <p class="contributor-bio">
+                Building scalable backends and clean APIs. Enjoying the journey from idea to production one PR at a time.
+              </p>
+              <div class="skills-list">
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Express</span>
+                <span class="skill-tag">MongoDB</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com" target="_blank" class="social-link">🐙 GitHub</a>
+              <a href="https://linkedin.com" target="_blank" class="social-link">💼 LinkedIn</a>
+            </div>
+          </div>
+
+          <!-- ===== CONTRIBUTOR 5: Yuki Tanaka ===== -->
+          <div class="contributor-card" data-name="Yuki Tanaka" data-skills="java, android, mobile, kotlin">
+            <div class="card-header">
+              <div class="avatar" style="background: linear-gradient(135deg, #fa709a, #fee140);">
+                YT
+              </div>
+              <div class="card-badge">Contributor</div>
+            </div>
+            <div class="card-body">
+              <h3 class="contributor-name">Yuki Tanaka</h3>
+              <p class="contributor-role">Mobile Developer</p>
+              <p class="contributor-bio">
+                Creating smooth Android experiences. When not coding, I'm exploring new hiking trails and photography.
+              </p>
+              <div class="skills-list">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Kotlin</span>
+                <span class="skill-tag">Android</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com" target="_blank" class="social-link">🐙 GitHub</a>
+              <a href="https://linkedin.com" target="_blank" class="social-link">💼 LinkedIn</a>
+            </div>
+          </div>
+
+          <!-- ===== ADD YOUR CARD HERE =====
+               Copy the template from above and paste it right here!
+               Remember to:
+               1. Change the data-name and data-skills attributes
+               2. Change the avatar initials and gradient color
+               3. Fill in your name, role, bio, and skills
+               4. Add your GitHub and LinkedIn links
+          ============================================ -->
+
+        </div>
+
+        <!-- No Results Message (shown when search returns nothing) -->
+        <div class="no-results" id="no-results" style="display: none;">
+          <span class="no-results-icon">😕</span>
+          <p>No contributors found matching your search. Try a different name or skill!</p>
+        </div>
+
+        <!-- Contributor Count -->
+        <p class="contributors-total" id="contributors-total">
+          Showing <strong id="visible-count">5</strong> contributors
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== HOW TO CONTRIBUTE SECTION ==================== -->
+    <section class="contribute-section" id="how-to-contribute">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">How to Contribute 🛠️</h2>
+          <p class="section-subtitle">
+            Follow these simple steps to add your card and make your first open-source contribution!
+          </p>
+        </div>
+
+        <!-- Steps Timeline -->
+        <div class="steps-container">
+
+          <!-- Step 1 -->
+          <div class="step-card" id="step-1">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h3>Fork the Repository</h3>
+              <p>Click the <strong>Fork</strong> button on the top-right of the GitHub repository page. This creates your own copy of the project.</p>
+              <div class="code-block">
+                <span class="code-comment"># After forking, you'll have:</span><br/>
+                github.com/<span class="code-highlight">your-username</span>/team-contribution-project
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card" id="step-2">
+            <div class="step-number">02</div>
+            <div class="step-content">
+              <h3>Clone Your Fork</h3>
+              <p>Download your forked copy to your local machine using the <code>git clone</code> command.</p>
+              <div class="code-block">
+                git clone https://github.com/<span class="code-highlight">your-username</span>/team-contribution-project.git<br/>
+                cd team-contribution-project
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card" id="step-3">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h3>Create a New Branch</h3>
+              <p>Always create a new branch for your changes. Never push directly to <code>main</code>!</p>
+              <div class="code-block">
+                <span class="code-comment"># Use the format: add/your-name</span><br/>
+                git checkout -b add/<span class="code-highlight">your-name</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="step-card" id="step-4">
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <h3>Add Your Contributor Card</h3>
+              <p>Open <code>index.html</code>, find the comment that says <strong>"ADD YOUR CARD HERE"</strong>, and paste your card code there. See the template inside the file!</p>
+              <div class="code-block">
+                <span class="code-comment">&lt;!-- ===== ADD YOUR CARD HERE ===== --&gt;</span><br/>
+                <span class="code-comment">&lt;!-- Copy the template above and fill in YOUR details --&gt;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="step-card" id="step-5">
+            <div class="step-number">05</div>
+            <div class="step-content">
+              <h3>Commit &amp; Push</h3>
+              <p>Save your changes, commit them with a proper message, and push to your fork.</p>
+              <div class="code-block">
+                git add .<br/>
+                git commit -m "feat: add <span class="code-highlight">Your Name</span> contributor card"<br/>
+                git push origin add/<span class="code-highlight">your-name</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="step-card" id="step-6">
+            <div class="step-number">06</div>
+            <div class="step-content">
+              <h3>Open a Pull Request</h3>
+              <p>Go to the original repository on GitHub and click <strong>"Compare &amp; Pull Request"</strong>. Write a short description and submit!</p>
+              <div class="code-block">
+                <span class="code-comment"># PR Title format:</span><br/>
+                feat: Add <span class="code-highlight">Your Name</span> — [Your Role]
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Rules Box -->
+        <div class="rules-box">
+          <h3>📋 Contribution Rules</h3>
+          <ul class="rules-list">
+            <li>✅ One card per contributor — keep it about yourself!</li>
+            <li>✅ Use branch naming: <code>add/your-name</code></li>
+            <li>🚫 Never push directly to the <code>main</code> branch</li>
+            <li>🚫 Do not modify other contributor's cards</li>
+            <li>✅ Keep your bio under 150 characters</li>
+            <li>✅ Make sure the page still looks good after your changes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a href="#" class="nav-logo">
+              <span class="logo-icon">🚀</span>
+              <span class="logo-text">OpenCollab</span>
+            </a>
+            <p>A beginner-friendly project for learning Git &amp; GitHub collaboration.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#contributors">Contributors</a></li>
+              <li><a href="#how-to-contribute">Contribute</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="https://docs.github.com" target="_blank">GitHub Docs</a></li>
+              <li><a href="https://git-scm.com/doc" target="_blank">Git Docs</a></li>
+              <li><a href="contributors/example-contributor.html" target="_blank">Example File</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Made with ❤️ by contributors like you &bull; Open Source Forever</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

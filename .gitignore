@@ -1,0 +1,83 @@
+# ============================================================
+# .gitignore — Files & Folders Git Should Ignore
+# ============================================================
+# GOLDEN RULE: If it's in .gitignore, it won't be committed.
+# Use this to exclude: secrets, editor configs, OS junk files.
+# ============================================================
+
+
+# --- SECRETS — NEVER commit these! ---
+# Real .env file (contains passwords, API keys, tokens)
+# Always use .env.example to show what variables are needed.
+.env
+.env.local
+.env.*.local
+
+
+# --- OS GENERATED FILES ---
+# macOS
+.DS_Store
+.AppleDouble
+.Spotlight-V100
+._*
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+
+
+# --- CODE EDITORS & IDEs ---
+# VS Code (extensions.json IS okay to share)
+.vscode/
+!.vscode/extensions.json
+
+# JetBrains (WebStorm, IntelliJ, etc.)
+.idea/
+*.iml
+
+# Vim / Neovim swap files
+*.swp
+*.swo
+
+# Sublime Text
+*.sublime-workspace
+
+
+# --- NODE.JS (if you add a build tool later) ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.npm
+.cache/
+
+
+# --- BUILD OUTPUTS ---
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+
+# --- LOGS & TEMP FILES ---
+*.log
+*.tmp
+*.temp
+*.bak
+
+
+# ============================================================
+# WHAT IS COMMITTED (not ignored):
+# ✅ index.html          — Main page
+# ✅ style.css           — Stylesheet
+# ✅ script.js           — JavaScript
+# ✅ README.md           — Documentation
+# ✅ .env.example        — Variable template (no real secrets!)
+# ✅ .gitignore          — This file
+# ✅ contributors/       — Contributor HTML pages
+# ============================================================
