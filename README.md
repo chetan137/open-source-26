@@ -36,6 +36,8 @@ This is a static project — no server or installation needed!
 # If you cloned the repo:
 cd team-contribution-project
 # Then just open index.html in your browser (double-click it)
+
+# else run start index.html
 ```
 
 ---
